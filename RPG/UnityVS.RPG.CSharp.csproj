@@ -67,6 +67,7 @@
     <Compile Include="Assets\CreatureController.cs" />
     <Compile Include="Assets\CreatureEntity.cs" />
     <Compile Include="Assets\CreatureManager.cs" />
+    <Compile Include="Assets\EquipmentEntity.cs" />
     <Compile Include="Assets\Game 1 - Catch eggs\Scripts\EggCollider.cs" />
     <Compile Include="Assets\Game 1 - Catch eggs\Scripts\EggScript.cs" />
     <Compile Include="Assets\Game 1 - Catch eggs\Scripts\PlayerScript.cs" />
@@ -259,6 +260,7 @@
     <Compile Include="Assets\RPGKit\Scripts\Storage\Language.cs" />
     <Compile Include="Assets\RPGKit\Scripts\Storage\XMLStorage.cs" />
     <Compile Include="Assets\RPGKit\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\SkillEntity.cs" />
     <Compile Include="Assets\Topdown Kit\Effect\Effects_01\Prefebs\DestroyForTime.cs" />
     <Compile Include="Assets\Topdown Kit\Effect\Effects_01\Prefebs\FollowTarget.cs" />
     <Compile Include="Assets\Topdown Kit\Effect\Effects_02\AnimationSpeed.cs" />

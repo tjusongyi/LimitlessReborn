@@ -7,28 +7,60 @@ using System.Collections;
 /// </summary>
 public class CreatureEntity : BaseEntity{
 
-    public class BaseAttribute   //不计算装备与技能
+    /// <summary>
+    /// searchRange:搜索附近生物的范围，小地图显示时根据生物等级显示不同颜色
+    /// 
+    /// </summary>
+    public struct BaseAttribute   //不计算装备与技能
     {
-        public int level, hp, mp, atack, defend, speed, hit;
-        public float criticalRate, atkSpd, atkRange, movespeed, exp;
-    }
-    public string name;
-    public BaseAttribute baseAtrr;
-
-    public void InitEntity()  //如果是一级的话在基础属性的基础上将属性随机化
-    {
-        if(baseAtrr.level == 1)
-        {
-
-        }
-        else
-        {
-
-        }
+        public uint hp, mp, attack, defend, hpRegenrate, mpRegenerate, searchRange;
+        public float criticalRate,criticalDamage, atkSpd, atkRange, moveSpeed;
     }
 
-    public void Hp()
+    public struct BaseAttibuteDisturbance
+    {
+        public uint hp, mp, attack, defend, hpRegenrate, mpRegenerate, searchRange;
+        public float criticalRate, criticalDamage, atkSpd, atkRange, moveSpeed;
+    }
+
+    public class FinalAttribute
+    {
+        public uint hp, mp, attack, defend, hpRegenrate, mpRegenerate, searchRange;
+        public float criticalRate,criticalDamage, atkSpd, atkRange, moveSpeed;
+    }
+    
+    public int MajorLevel;
+    public int MinorLevel;
+    public uint[,] ExpForLevel;
+    public uint Exp;
+    public int Species;
+    public uint ExpGive;
+    public BaseAttribute BaseAtrr;
+    public FinalAttribute FinalAtrr;
+    //public uint GeneralCombatPoint; //根据基础属性计算出来的综合战力
+
+    public SkillEntity Skills;
+
+    public CreatureEntity()
+    {
+        ExpForLevel = new uint[9,9];
+        ReadFormConfig(Species);
+    }
+
+    public void SychData(bool isGet) 
+    {
+        
+
+    }
+
+    void ReadFormConfig(int species)
     {
 
+    }
+
+    public CreatureEntity InitAttribute()   //如果是一级的话在基础属性的基础上将属性随机化
+    {
+
+        return this;
     }
 }
