@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfRPGParagraph xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RPGParagraph OID="1" PLTID="0" CEP="true" CR="false">
+    <ID>1</ID>
+    <Name>1</Name>
+    <SystemDescription>Greetings in this demo!</SystemDescription>
+    <PT>Greetings in this demo!</PT>
+    <Conditions />
+    <LineTexts>
+      <LineText>
+        <Text>What I can do?</Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="QUEST" ITEM="0" AT="EndConversation" AM="0" TX="" />
+        </GameEvents>
+        <Conditions />
+        <AdditionalTexts>
+          <LongLineText>
+            <NT>Well you can visit shops, finish quests, kill creatures, use teleports</NT>
+            <PT>It is all?</PT>
+            <IE>false</IE>
+          </LongLineText>
+          <LongLineText>
+            <NT>No, it is not... cast spells, open spell book, open quest log</NT>
+            <PT>Sounds good</PT>
+            <IE>false</IE>
+          </LongLineText>
+          <LongLineText>
+            <NT>You can gain levels, improve skills etc...</NT>
+            <PT>Really good</PT>
+            <IE>false</IE>
+          </LongLineText>
+        </AdditionalTexts>
+        <ID>2</ID>
+      </LineText>
+      <LineText>
+        <Text>Can I test some quests?</Text>
+        <Order>0</Order>
+        <GameEvents />
+        <Conditions>
+          <Condition ITH="1" ATR="0" CT="QuestNotStarted" SI="0" />
+        </Conditions>
+        <AdditionalTexts />
+        <ID>3</ID>
+      </LineText>
+      <LineText>
+        <Text>About that  spider. How can I kill him?</Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="QUEST" ITEM="0" AT="QuestStart" AM="0" TX="" />
+        </GameEvents>
+        <Conditions>
+          <Condition ITH="1" ATR="0" CT="QuestInProgress" SI="0" />
+        </Conditions>
+        <AdditionalTexts />
+        <ID>11</ID>
+      </LineText>
+      <LineText>
+        <Text>I killed that spider</Text>
+        <Order>0</Order>
+        <GameEvents />
+        <Conditions>
+          <Condition ITH="1" ATR="0" CT="QuestFinished" SI="0" />
+        </Conditions>
+        <AdditionalTexts />
+        <ID>12</ID>
+      </LineText>
+      <LineText>
+        <Text>Do you remember how I killed that spider?</Text>
+        <Order>0</Order>
+        <GameEvents />
+        <Conditions>
+          <Condition ITH="1" ATR="0" CT="QuestCompleted" SI="0" />
+        </Conditions>
+        <AdditionalTexts />
+        <ID>13</ID>
+      </LineText>
+      <LineText>
+        <Text>Give me strentgth</Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="ATTRIBUTE" ITEM="1" AT="GiveItem" AM="10" TX="" />
+          <ActionEvent PI="QUEST" ITEM="0" AT="EndConversation" AM="0" TX="" />
+        </GameEvents>
+        <Conditions />
+        <AdditionalTexts />
+        <ID>16</ID>
+      </LineText>
+      <LineText>
+        <Text>Your friend send me </Text>
+        <Order>0</Order>
+        <GameEvents />
+        <Conditions>
+          <Condition ITH="2" ATR="0" CT="QuestInProgress" SI="0" />
+        </Conditions>
+        <AdditionalTexts />
+        <ID>18</ID>
+      </LineText>
+      <LineText>
+        <Text>I will visit village</Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="QUEST" ITEM="6" AT="QuestStart" AM="0" TX="" />
+        </GameEvents>
+        <Conditions>
+          <Condition ITH="6" ATR="0" CT="QuestNotStarted" SI="0" />
+        </Conditions>
+        <AdditionalTexts />
+        <ID>0</ID>
+      </LineText>
+      <LineText>
+        <Text>Quest number 6 in finished</Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="QUEST" ITEM="6" AT="QuestEnd" AM="0" TX="" />
+        </GameEvents>
+        <Conditions>
+          <Condition ITH="6" ATR="0" CT="QuestFinished" SI="0" />
+        </Conditions>
+        <AdditionalTexts />
+        <ID>0</ID>
+      </LineText>
+    </LineTexts>
+    <Actions />
+    <IsGeneralConversation>false</IsGeneralConversation>
+  </RPGParagraph>
+  <RPGParagraph OID="1" PLTID="3" CEP="true" CR="false">
+    <ID>2</ID>
+    <Name>2</Name>
+    <SystemDescription>Yes, of course! You can kill one spider.</SystemDescription>
+    <PT>Yes, of course! You can kill one spider.</PT>
+    <Conditions />
+    <LineTexts>
+      <LineText>
+        <Text>Ok I will do it</Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="QUEST" ITEM="1" AT="QuestStart" AM="0" TX="" />
+        </GameEvents>
+        <Conditions />
+        <AdditionalTexts />
+        <ID>4</ID>
+      </LineText>
+      <LineText>
+        <Text>No thanks</Text>
+        <Order>0</Order>
+        <GameEvents />
+        <Conditions />
+        <AdditionalTexts />
+        <ID>5</ID>
+      </LineText>
+    </LineTexts>
+    <Actions />
+    <IsGeneralConversation>false</IsGeneralConversation>
+  </RPGParagraph>
+  <RPGParagraph OID="1" PLTID="4" CEP="true" CR="true">
+    <ID>3</ID>
+    <Name>3</Name>
+    <SystemDescription>Perfect!</SystemDescription>
+    <PT>Perfect!</PT>
+    <Conditions />
+    <LineTexts />
+    <Actions />
+    <IsGeneralConversation>false</IsGeneralConversation>
+  </RPGParagraph>
+  <RPGParagraph OID="1" PLTID="11" CEP="false" CR="false">
+    <ID>6</ID>
+    <Name>6</Name>
+    <SystemDescription>Just kill him. Left mouse click as attack and you will see his hp will go down fast.</SystemDescription>
+    <PT>Just kill him. Left mouse click as attack and you will see his hp will go down fast.</PT>
+    <Conditions />
+    <LineTexts>
+      <LineText>
+        <Text>Ok, I will try</Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="QUEST" ITEM="0" AT="EndConversation" AM="0" TX="" />
+        </GameEvents>
+        <Conditions />
+        <AdditionalTexts />
+        <ID>10</ID>
+      </LineText>
+    </LineTexts>
+    <Actions />
+    <IsGeneralConversation>false</IsGeneralConversation>
+  </RPGParagraph>
+  <RPGParagraph OID="1" PLTID="12" CEP="false" CR="false">
+    <ID>7</ID>
+    <Name>7</Name>
+    <SystemDescription>Excellent! Now you completed first quest. You can watch it in quest log.</SystemDescription>
+    <PT>Excellent! Now you completed first quest. You can watch it in quest log.</PT>
+    <Conditions />
+    <LineTexts>
+      <LineText>
+        <Text>Thank you!</Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="QUEST" ITEM="0" AT="EndConversation" AM="0" TX="" />
+        </GameEvents>
+        <Conditions />
+        <AdditionalTexts />
+        <ID>14</ID>
+      </LineText>
+    </LineTexts>
+    <Actions>
+      <ActionEvent PI="QUEST" ITEM="1" AT="QuestEnd" AM="0" TX="" />
+    </Actions>
+    <IsGeneralConversation>false</IsGeneralConversation>
+  </RPGParagraph>
+  <RPGParagraph OID="1" PLTID="13" CEP="false" CR="false">
+    <ID>8</ID>
+    <Name>8</Name>
+    <SystemDescription>Yes of course I remember it. Now in this conversation step (paragraph). Can be other quest.</SystemDescription>
+    <PT>Yes of course I remember it. Now in this conversation step (paragraph). Can be other quest.</PT>
+    <Conditions />
+    <LineTexts>
+      <LineText>
+        <Text>Wow, perfect</Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="QUEST" ITEM="0" AT="EndConversation" AM="0" TX="" />
+        </GameEvents>
+        <Conditions />
+        <AdditionalTexts />
+        <ID>15</ID>
+      </LineText>
+    </LineTexts>
+    <Actions />
+    <IsGeneralConversation>false</IsGeneralConversation>
+  </RPGParagraph>
+  <RPGParagraph OID="2" PLTID="0" CEP="true" CR="false">
+    <ID>10</ID>
+    <Name>10</Name>
+    <SystemDescription>Hi, can you talk to another NPC?</SystemDescription>
+    <PT>Hi, can you talk to another NPC?</PT>
+    <Conditions />
+    <LineTexts>
+      <LineText>
+        <Text>Yes I can do that</Text>
+        <Order>0</Order>
+        <GameEvents />
+        <Conditions>
+          <Condition ITH="2" ATR="0" CT="QuestNotStarted" SI="0" />
+        </Conditions>
+        <AdditionalTexts />
+        <ID>19</ID>
+      </LineText>
+      <LineText>
+        <Text>I talked to him</Text>
+        <Order>0</Order>
+        <GameEvents />
+        <Conditions>
+          <Condition ITH="2" ATR="0" CT="QuestFinished" SI="0" />
+        </Conditions>
+        <AdditionalTexts />
+        <ID>22</ID>
+      </LineText>
+    </LineTexts>
+    <Actions />
+    <IsGeneralConversation>false</IsGeneralConversation>
+  </RPGParagraph>
+  <RPGParagraph OID="2" PLTID="19" CEP="true" CR="false">
+    <ID>11</ID>
+    <Name>11</Name>
+    <SystemDescription>Perfect!</SystemDescription>
+    <PT>Perfect!</PT>
+    <Conditions />
+    <LineTexts />
+    <Actions>
+      <ActionEvent PI="QUEST" ITEM="2" AT="QuestStart" AM="0" TX="" />
+    </Actions>
+    <IsGeneralConversation>false</IsGeneralConversation>
+  </RPGParagraph>
+  <RPGParagraph OID="1" PLTID="18" CEP="true" CR="false">
+    <ID>12</ID>
+    <Name>12</Name>
+    <SystemDescription>What he wants?</SystemDescription>
+    <PT>What he wants?</PT>
+    <Conditions />
+    <LineTexts>
+      <LineText>
+        <Text>Only quest testing, nothing else </Text>
+        <Order>0</Order>
+        <GameEvents />
+        <Conditions />
+        <AdditionalTexts />
+        <ID>20</ID>
+      </LineText>
+    </LineTexts>
+    <Actions />
+    <IsGeneralConversation>false</IsGeneralConversation>
+  </RPGParagraph>
+  <RPGParagraph OID="1" PLTID="20" CEP="true" CR="false">
+    <ID>13</ID>
+    <Name>13</Name>
+    <SystemDescription>So it works, right? </SystemDescription>
+    <PT>So it works, right? </PT>
+    <Conditions />
+    <LineTexts>
+      <LineText>
+        <Text>Yes, bye</Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="QUEST" ITEM="0" AT="EndConversation" AM="0" TX="" />
+          <ActionEvent PI="QUEST" ITEM="0" AT="QuestStart" AM="0" TX="" />
+        </GameEvents>
+        <Conditions />
+        <AdditionalTexts />
+        <ID>21</ID>
+      </LineText>
+    </LineTexts>
+    <Actions />
+    <IsGeneralConversation>false</IsGeneralConversation>
+  </RPGParagraph>
+  <RPGParagraph OID="2" PLTID="22" CEP="true" CR="false">
+    <ID>14</ID>
+    <Name>14</Name>
+    <SystemDescription>Perfect, quest is completed! :)</SystemDescription>
+    <PT>Perfect, quest is completed! :)</PT>
+    <Conditions />
+    <LineTexts>
+      <LineText>
+        <Text>Ok, Bye </Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="QUEST" ITEM="0" AT="EndConversation" AM="0" TX="" />
+          <ActionEvent PI="WORLDOBJECT" ITEM="1" AT="RemoveWorldObject" AM="0" TX="" />
+        </GameEvents>
+        <Conditions />
+        <AdditionalTexts />
+        <ID>23</ID>
+      </LineText>
+    </LineTexts>
+    <Actions>
+      <ActionEvent PI="QUEST" ITEM="2" AT="QuestEnd" AM="0" TX="" />
+    </Actions>
+    <IsGeneralConversation>false</IsGeneralConversation>
+  </RPGParagraph>
+  <RPGParagraph OID="3" PLTID="0" CEP="true" CR="false">
+    <ID>16</ID>
+    <Name>16</Name>
+    <SystemDescription>Hello, so you completed first two quests?</SystemDescription>
+    <PT>Hello, so you completed first two quests?</PT>
+    <Conditions>
+      <Condition ITH="1" ATR="0" CT="QuestCompleted" SI="0" />
+      <Condition ITH="2" ATR="0" CT="QuestCompleted" SI="0" />
+    </Conditions>
+    <LineTexts>
+      <LineText>
+        <Text>Yes</Text>
+        <Order>0</Order>
+        <GameEvents />
+        <Conditions>
+          <Condition ITH="3" ATR="0" CT="QuestNotStarted" SI="0" />
+          <Condition ITH="1" ATR="0" CT="QuestCompleted" SI="0" />
+          <Condition ITH="2" ATR="0" CT="QuestCompleted" SI="0" />
+        </Conditions>
+        <AdditionalTexts />
+        <ID>25</ID>
+      </LineText>
+      <LineText>
+        <Text>I killed both spheres</Text>
+        <Order>0</Order>
+        <GameEvents />
+        <Conditions>
+          <Condition ITH="3" ATR="0" CT="QuestFinished" SI="0" />
+        </Conditions>
+        <AdditionalTexts />
+        <ID>27</ID>
+      </LineText>
+    </LineTexts>
+    <Actions />
+    <IsGeneralConversation>false</IsGeneralConversation>
+  </RPGParagraph>
+  <RPGParagraph OID="3" PLTID="25" CEP="true" CR="false">
+    <ID>17</ID>
+    <Name>17</Name>
+    <SystemDescription>So this quest will have two parts</SystemDescription>
+    <PT>So this quest will have two parts</PT>
+    <Conditions />
+    <LineTexts>
+      <LineText>
+        <Text>Ok, let´s try</Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="QUEST" ITEM="3" AT="QuestStart" AM="0" TX="" />
+          <ActionEvent PI="QUEST" ITEM="0" AT="EndConversation" AM="0" TX="" />
+        </GameEvents>
+        <Conditions />
+        <AdditionalTexts />
+        <ID>26</ID>
+      </LineText>
+    </LineTexts>
+    <Actions>
+      <ActionEvent PI="QUEST" ITEM="0" AT="QuestStart" AM="0" TX="" />
+    </Actions>
+    <IsGeneralConversation>false</IsGeneralConversation>
+  </RPGParagraph>
+  <RPGParagraph OID="3" PLTID="27" CEP="false" CR="false">
+    <ID>18</ID>
+    <Name>18</Name>
+    <SystemDescription>Now we will try quest that will end at different NPC. It will be easy. You have visit "Fourth cube" not far away.</SystemDescription>
+    <PT>Now we will try quest that will end at different NPC. It will be easy. You have visit "Fourth cube" not far away.</PT>
+    <Conditions />
+    <LineTexts>
+      <LineText>
+        <Text>Ok</Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="QUEST" ITEM="0" AT="EndConversation" AM="0" TX="" />
+        </GameEvents>
+        <Conditions />
+        <AdditionalTexts />
+        <ID>28</ID>
+      </LineText>
+    </LineTexts>
+    <Actions>
+      <ActionEvent PI="QUEST" ITEM="3" AT="QuestEnd" AM="0" TX="" />
+      <ActionEvent PI="QUEST" ITEM="4" AT="QuestStart" AM="0" TX="" />
+    </Actions>
+    <IsGeneralConversation>false</IsGeneralConversation>
+  </RPGParagraph>
+  <RPGParagraph OID="4" PLTID="0" CEP="true" CR="false">
+    <ID>18</ID>
+    <Name>18</Name>
+    <SystemDescription>Hi, I am fourth cube</SystemDescription>
+    <PT>Hi, I am fourth cube</PT>
+    <Conditions />
+    <LineTexts>
+      <LineText>
+        <Text>Yes he did!</Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="QUEST" ITEM="4" AT="QuestEnd" AM="0" TX="" />
+        </GameEvents>
+        <Conditions>
+          <Condition ITH="4" ATR="0" CT="QuestInProgress" SI="0" />
+        </Conditions>
+        <AdditionalTexts />
+        <ID>29</ID>
+      </LineText>
+      <LineText>
+        <Text>So what now?</Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="QUEST" ITEM="0" AT="QuestStart" AM="0" TX="" />
+        </GameEvents>
+        <Conditions>
+          <Condition ITH="4" ATR="0" CT="QuestCompleted" SI="0" />
+          <Condition ITH="5" ATR="0" CT="QuestNotStarted" SI="0" />
+        </Conditions>
+        <AdditionalTexts />
+        <ID>30</ID>
+      </LineText>
+      <LineText>
+        <Text>So epic quest completed</Text>
+        <Order>0</Order>
+        <GameEvents />
+        <Conditions>
+          <Condition ITH="5" ATR="0" CT="QuestFinished" SI="0" />
+        </Conditions>
+        <AdditionalTexts />
+        <ID>33</ID>
+      </LineText>
+    </LineTexts>
+    <Actions />
+    <IsGeneralConversation>false</IsGeneralConversation>
+  </RPGParagraph>
+  <RPGParagraph OID="4" PLTID="30" CEP="false" CR="false">
+    <ID>19</ID>
+    <Name>19</Name>
+    <SystemDescription>Now we will try final quest. Kill some spider and between chat with "Fifth cube". Do you agree?</SystemDescription>
+    <PT>Now we will try final quest. Kill some spider and between chat with "Fifth cube". Do you agree?</PT>
+    <Conditions />
+    <LineTexts>
+      <LineText>
+        <Text>Yes I do</Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="QUEST" ITEM="5" AT="QuestStart" AM="0" TX="" />
+          <ActionEvent PI="QUEST" ITEM="0" AT="EndConversation" AM="0" TX="" />
+        </GameEvents>
+        <Conditions />
+        <AdditionalTexts />
+        <ID>31</ID>
+      </LineText>
+      <LineText>
+        <Text>No it is enough</Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="QUEST" ITEM="0" AT="EndConversation" AM="0" TX="" />
+        </GameEvents>
+        <Conditions />
+        <AdditionalTexts />
+        <ID>31</ID>
+      </LineText>
+    </LineTexts>
+    <Actions />
+    <IsGeneralConversation>false</IsGeneralConversation>
+  </RPGParagraph>
+  <RPGParagraph OID="5" PLTID="0" CEP="true" CR="false">
+    <ID>20</ID>
+    <Name>20</Name>
+    <SystemDescription>So FourthCube send you, right?</SystemDescription>
+    <PT>So FourthCube send you, right?</PT>
+    <Conditions>
+      <Condition ITH="5" ATR="0" CT="QuestInProgress" SI="0" />
+    </Conditions>
+    <LineTexts>
+      <LineText>
+        <Text>Yes</Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="QUEST" ITEM="0" AT="EndConversation" AM="0" TX="" />
+        </GameEvents>
+        <Conditions />
+        <AdditionalTexts />
+        <ID>32</ID>
+      </LineText>
+    </LineTexts>
+    <Actions />
+    <IsGeneralConversation>false</IsGeneralConversation>
+  </RPGParagraph>
+  <RPGParagraph OID="4" PLTID="33" CEP="true" CR="false">
+    <ID>21</ID>
+    <Name>21</Name>
+    <SystemDescription>Perfect, demo is completed. Now you watch in menu "RPG". How you can create own quets.</SystemDescription>
+    <PT>Perfect, demo is completed. Now you watch in menu "RPG". How you can create own quets.</PT>
+    <Conditions />
+    <LineTexts />
+    <Actions>
+      <ActionEvent PI="QUEST" ITEM="0" AT="EndConversation" AM="0" TX="" />
+      <ActionEvent PI="QUEST" ITEM="5" AT="QuestEnd" AM="0" TX="" />
+    </Actions>
+    <IsGeneralConversation>false</IsGeneralConversation>
+  </RPGParagraph>
+  <RPGParagraph OID="6" PLTID="0" CEP="true" CR="false">
+    <ID>22</ID>
+    <Name>22</Name>
+    <SystemDescription>Hi, I am testing cube.</SystemDescription>
+    <PT>Hi, I am testing NPC.</PT>
+    <Conditions />
+    <LineTexts>
+      <LineText>
+        <Text>Please give me quest, I want to kill capsule</Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="QUEST" ITEM="8" AT="QuestStart" AM="0" TX="" />
+          <ActionEvent PI="QUEST" ITEM="0" AT="EndConversation" AM="0" TX="" />
+        </GameEvents>
+        <Conditions>
+          <Condition ITH="8" ATR="0" CT="QuestNotStarted" SI="0" />
+        </Conditions>
+        <AdditionalTexts />
+        <ID>33</ID>
+      </LineText>
+      <LineText>
+        <Text>Capsule is still alive, sorry :(</Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="QUEST" ITEM="0" AT="EndConversation" AM="0" TX="" />
+        </GameEvents>
+        <Conditions>
+          <Condition ITH="8" ATR="0" CT="QuestInProgress" SI="0" />
+        </Conditions>
+        <AdditionalTexts />
+        <ID>33</ID>
+      </LineText>
+      <LineText>
+        <Text>Huray I killed that capsule</Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="QUEST" ITEM="8" AT="QuestEnd" AM="0" TX="" />
+          <ActionEvent PI="QUEST" ITEM="0" AT="EndConversation" AM="0" TX="" />
+        </GameEvents>
+        <Conditions>
+          <Condition ITH="8" ATR="0" CT="QuestFinished" SI="0" />
+        </Conditions>
+        <AdditionalTexts />
+        <ID>33</ID>
+      </LineText>
+      <LineText>
+        <Text>Capsule is dead!</Text>
+        <Order>0</Order>
+        <GameEvents>
+          <ActionEvent PI="QUEST" ITEM="0" AT="EndConversation" AM="0" TX="" />
+        </GameEvents>
+        <Conditions>
+          <Condition ITH="8" ATR="0" CT="QuestCompleted" SI="0" />
+        </Conditions>
+        <AdditionalTexts />
+        <ID>33</ID>
+      </LineText>
+    </LineTexts>
+    <Actions />
+    <IsGeneralConversation>false</IsGeneralConversation>
+  </RPGParagraph>
+  <RPGParagraph OID="0" PLTID="0" CEP="true" CR="false">
+    <ID>23</ID>
+    <Name>General talk</Name>
+    <Description />
+    <SystemDescription />
+    <PT />
+    <Conditions />
+    <LineTexts>
+      <LineText>
+        <Text>Inventory</Text>
+        <Order>0</Order>
+        <GameEvents />
+        <Conditions />
+        <AdditionalTexts>
+          <LongLineText>
+            <NT>Inventory you can open pressing I</NT>
+            <PT>Thank you</PT>
+            <IE>false</IE>
+          </LongLineText>
+        </AdditionalTexts>
+        <ID>34</ID>
+      </LineText>
+      <LineText>
+        <Text>Spellbook</Text>
+        <Order>0</Order>
+        <GameEvents />
+        <Conditions />
+        <AdditionalTexts>
+          <LongLineText>
+            <NT>Spellbook you can open pressing K</NT>
+            <PT>Thank you</PT>
+            <IE>false</IE>
+          </LongLineText>
+        </AdditionalTexts>
+        <ID>34</ID>
+      </LineText>
+    </LineTexts>
+    <Actions />
+    <IsGeneralConversation>true</IsGeneralConversation>
+  </RPGParagraph>
+</ArrayOfRPGParagraph>

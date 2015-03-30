@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfRPGTeleport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RPGTeleport>
+    <TargetTeleport>1</TargetTeleport>
+    <NeedActivateKey>false</NeedActivateKey>
+    <MustTarget>false</MustTarget>
+    <ArriveX>329</ArriveX>
+    <ArriveZ>208</ArriveZ>
+    <ArriveY>38</ArriveY>
+    <FixedRotation>false</FixedRotation>
+    <YRotation>0</YRotation>
+    <SceneId>1</SceneId>
+    <OnlyArrive>false</OnlyArrive>
+    <Conditions />
+    <ID>1</ID>
+    <Name>teleport_to_324_208</Name>
+    <Description>teleport_to_324_208</Description>
+    <SystemDescription />
+  </RPGTeleport>
+  <RPGTeleport>
+    <TargetTeleport>2</TargetTeleport>
+    <NeedActivateKey>false</NeedActivateKey>
+    <MustTarget>false</MustTarget>
+    <ArriveX>429</ArriveX>
+    <ArriveZ>208</ArriveZ>
+    <ArriveY>38</ArriveY>
+    <FixedRotation>false</FixedRotation>
+    <YRotation>0</YRotation>
+    <SceneId>1</SceneId>
+    <OnlyArrive>false</OnlyArrive>
+    <Conditions />
+    <ID>2</ID>
+    <Name>teleport_to_424</Name>
+    <Description />
+    <SystemDescription />
+  </RPGTeleport>
+  <RPGTeleport>
+    <TargetTeleport>3</TargetTeleport>
+    <NeedActivateKey>false</NeedActivateKey>
+    <MustTarget>false</MustTarget>
+    <ArriveX>950</ArriveX>
+    <ArriveZ>529</ArriveZ>
+    <ArriveY>43</ArriveY>
+    <FixedRotation>false</FixedRotation>
+    <YRotation>0</YRotation>
+    <SceneId>1</SceneId>
+    <OnlyArrive>false</OnlyArrive>
+    <Conditions />
+    <ID>3</ID>
+    <Name>teleport_to_950_43_529</Name>
+    <Description>teleport_to_950_43_529</Description>
+    <SystemDescription />
+  </RPGTeleport>
+  <RPGTeleport>
+    <TargetTeleport>4</TargetTeleport>
+    <NeedActivateKey>false</NeedActivateKey>
+    <MustTarget>false</MustTarget>
+    <ArriveX>429</ArriveX>
+    <ArriveZ>240</ArriveZ>
+    <ArriveY>43</ArriveY>
+    <FixedRotation>false</FixedRotation>
+    <YRotation>0</YRotation>
+    <SceneId>1</SceneId>
+    <OnlyArrive>false</OnlyArrive>
+    <Conditions />
+    <ID>4</ID>
+    <Name>teleport_to_424_42_240</Name>
+    <Description>teleport_to_424_42_240</Description>
+    <SystemDescription />
+  </RPGTeleport>
+</ArrayOfRPGTeleport>

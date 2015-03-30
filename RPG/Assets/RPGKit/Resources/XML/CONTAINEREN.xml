@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfRPGContainer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RPGContainer>
+    <Categories>
+      <ContainerCategory>
+        <LevelAdjustment>Fixed</LevelAdjustment>
+        <MinValue>1</MinValue>
+        <MaxValue>20</MaxValue>
+        <Category>
+          <ID>1</ID>
+          <Name />
+          <Description />
+        </Category>
+        <Conditions />
+        <StackAmount>1</StackAmount>
+        <ChanceToFind>100</ChanceToFind>
+      </ContainerCategory>
+    </Categories>
+    <ContainerItems />
+    <DestroyEmpty>false</DestroyEmpty>
+    <SharedStash>false</SharedStash>
+    <OnlyLoot>false</OnlyLoot>
+    <maximumItems>20</maximumItems>
+    <IsEnemyContainer>false</IsEnemyContainer>
+    <Level>0</Level>
+    <ID>1</ID>
+    <Name>Basic container</Name>
+    <Description />
+    <SystemDescription />
+  </RPGContainer>
+  <RPGContainer>
+    <Categories />
+    <ContainerItems />
+    <DestroyEmpty>false</DestroyEmpty>
+    <SharedStash>true</SharedStash>
+    <OnlyLoot>false</OnlyLoot>
+    <maximumItems>30</maximumItems>
+    <IsEnemyContainer>false</IsEnemyContainer>
+    <Level>0</Level>
+    <ID>2</ID>
+    <Name>Shared container</Name>
+    <Description />
+    <SystemDescription />
+  </RPGContainer>
+</ArrayOfRPGContainer>

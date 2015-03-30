@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfRPGEnemy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RPGEnemy>
+    <ID>1</ID>
+    <Name>Sphere</Name>
+    <Description />
+    <SystemDescription />
+    <PrefabPath />
+    <Difficulty>Normal</Difficulty>
+    <Level>2</Level>
+    <UseDefaultValues>false</UseDefaultValues>
+    <Container>
+      <Categories>
+        <ContainerCategory>
+          <LevelAdjustment>Fixed</LevelAdjustment>
+          <MinValue>1</MinValue>
+          <MaxValue>100</MaxValue>
+          <Category>
+            <ID>1</ID>
+            <Name />
+            <Description />
+          </Category>
+          <Conditions />
+          <StackAmount>0</StackAmount>
+          <ChanceToFind>100</ChanceToFind>
+        </ContainerCategory>
+      </Categories>
+      <ContainerItems />
+      <DestroyEmpty>true</DestroyEmpty>
+      <SharedStash>false</SharedStash>
+      <OnlyLoot>true</OnlyLoot>
+      <maximumItems>30</maximumItems>
+      <IsEnemyContainer>true</IsEnemyContainer>
+      <Level>0</Level>
+      <ID>0</ID>
+    </Container>
+    <ChanceToEvade>4</ChanceToEvade>
+    <ChanceToHit>74</ChanceToHit>
+    <MaximumHp>20</MaximumHp>
+    <Armor>6</Armor>
+    <MinimumDmg>6</MinimumDmg>
+    <MaximumDmg>8</MaximumDmg>
+    <Experience>120</Experience>
+    <AttackSpeed>3</AttackSpeed>
+  </RPGEnemy>
+  <RPGEnemy>
+    <ID>2</ID>
+    <Name>Capsule</Name>
+    <Description />
+    <SystemDescription />
+    <PrefabPath />
+    <Difficulty>Easy</Difficulty>
+    <Level>2</Level>
+    <UseDefaultValues>false</UseDefaultValues>
+    <Container>
+      <Categories />
+      <ContainerItems />
+      <DestroyEmpty>true</DestroyEmpty>
+      <SharedStash>false</SharedStash>
+      <OnlyLoot>false</OnlyLoot>
+      <maximumItems>30</maximumItems>
+      <IsEnemyContainer>true</IsEnemyContainer>
+      <Level>0</Level>
+      <ID>0</ID>
+    </Container>
+    <ChanceToEvade>3</ChanceToEvade>
+    <ChanceToHit>73</ChanceToHit>
+    <MaximumHp>17</MaximumHp>
+    <Armor>5</Armor>
+    <MinimumDmg>5</MinimumDmg>
+    <MaximumDmg>7</MaximumDmg>
+    <Experience>107</Experience>
+    <AttackSpeed>3</AttackSpeed>
+  </RPGEnemy>
+  <RPGEnemy>
+    <ID>3</ID>
+    <Name>Testing enemy</Name>
+    <Description />
+    <SystemDescription />
+    <PrefabPath />
+    <Difficulty>Normal</Difficulty>
+    <Level>5</Level>
+    <UseDefaultValues>false</UseDefaultValues>
+    <Container>
+      <Categories />
+      <ContainerItems>
+        <ContainerItem>
+          <StackAmount>1</StackAmount>
+          <Preffix>WEAPON</Preffix>
+          <ID>1</ID>
+          <Conditions>
+            <Condition ITH="0" ATR="0" CT="QuestInProgress" SI="0" />
+          </Conditions>
+          <ChanceToFind>100</ChanceToFind>
+        </ContainerItem>
+      </ContainerItems>
+      <DestroyEmpty>true</DestroyEmpty>
+      <SharedStash>false</SharedStash>
+      <OnlyLoot>false</OnlyLoot>
+      <maximumItems>30</maximumItems>
+      <IsEnemyContainer>true</IsEnemyContainer>
+      <Level>0</Level>
+      <ID>0</ID>
+    </Container>
+    <ChanceToEvade>10</ChanceToEvade>
+    <ChanceToHit>80</ChanceToHit>
+    <MaximumHp>50</MaximumHp>
+    <Armor>15</Armor>
+    <MinimumDmg>15</MinimumDmg>
+    <MaximumDmg>20</MaximumDmg>
+    <Experience>180</Experience>
+    <AttackSpeed>3</AttackSpeed>
+  </RPGEnemy>
+</ArrayOfRPGEnemy>

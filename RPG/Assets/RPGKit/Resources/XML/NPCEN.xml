@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfRPGNPC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RPGNPC>
+    <ShopID>1</ShopID>
+    <ShopConditions />
+    <SpellShopID>1</SpellShopID>
+    <SpellShopConditions />
+    <Repairing>true</Repairing>
+    <ReparingConditions />
+    <RepairPriceModifier>2</RepairPriceModifier>
+    <RepairCurrencyID>1</RepairCurrencyID>
+    <TeleportConditions />
+    <Targets />
+    <GeneralConversationID>
+      <int>23</int>
+    </GeneralConversationID>
+    <IsGuildMember>true</IsGuildMember>
+    <GuildID>1</GuildID>
+    <IsRecruit>true</IsRecruit>
+    <AdvanceRankLevel>3</AdvanceRankLevel>
+    <ID>1</ID>
+    <Name>NPC</Name>
+    <Description />
+    <SystemDescription />
+  </RPGNPC>
+  <RPGNPC>
+    <ShopID>1</ShopID>
+    <ShopConditions />
+    <SpellShopID>0</SpellShopID>
+    <SpellShopConditions />
+    <Repairing>false</Repairing>
+    <ReparingConditions />
+    <RepairPriceModifier>2</RepairPriceModifier>
+    <RepairCurrencyID>1</RepairCurrencyID>
+    <TeleportConditions />
+    <Targets />
+    <GeneralConversationID />
+    <IsGuildMember>false</IsGuildMember>
+    <GuildID>0</GuildID>
+    <IsRecruit>false</IsRecruit>
+    <AdvanceRankLevel>0</AdvanceRankLevel>
+    <ID>2</ID>
+    <Name>Second NPC</Name>
+    <Description />
+    <SystemDescription />
+  </RPGNPC>
+  <RPGNPC>
+    <ShopID>0</ShopID>
+    <ShopConditions />
+    <SpellShopID>0</SpellShopID>
+    <SpellShopConditions />
+    <Repairing>false</Repairing>
+    <ReparingConditions />
+    <RepairPriceModifier>2</RepairPriceModifier>
+    <RepairCurrencyID>1</RepairCurrencyID>
+    <TeleportConditions />
+    <Targets />
+    <GeneralConversationID />
+    <IsGuildMember>false</IsGuildMember>
+    <GuildID>0</GuildID>
+    <IsRecruit>false</IsRecruit>
+    <AdvanceRankLevel>0</AdvanceRankLevel>
+    <ID>3</ID>
+    <Name>Third NPC</Name>
+    <Description />
+    <SystemDescription />
+  </RPGNPC>
+  <RPGNPC>
+    <ShopID>1</ShopID>
+    <ShopConditions />
+    <SpellShopID>1</SpellShopID>
+    <SpellShopConditions />
+    <Repairing>false</Repairing>
+    <ReparingConditions />
+    <RepairPriceModifier>2</RepairPriceModifier>
+    <RepairCurrencyID>1</RepairCurrencyID>
+    <TeleportConditions />
+    <Targets />
+    <GeneralConversationID />
+    <IsGuildMember>false</IsGuildMember>
+    <GuildID>0</GuildID>
+    <IsRecruit>false</IsRecruit>
+    <AdvanceRankLevel>0</AdvanceRankLevel>
+    <ID>4</ID>
+    <Name>Fourth NPC</Name>
+    <Description />
+    <SystemDescription />
+  </RPGNPC>
+  <RPGNPC>
+    <ShopID>0</ShopID>
+    <ShopConditions />
+    <SpellShopID>0</SpellShopID>
+    <SpellShopConditions />
+    <Repairing>false</Repairing>
+    <ReparingConditions />
+    <RepairPriceModifier>2</RepairPriceModifier>
+    <RepairCurrencyID>1</RepairCurrencyID>
+    <TeleportConditions />
+    <Targets />
+    <GeneralConversationID />
+    <IsGuildMember>false</IsGuildMember>
+    <GuildID>0</GuildID>
+    <IsRecruit>false</IsRecruit>
+    <AdvanceRankLevel>0</AdvanceRankLevel>
+    <ID>5</ID>
+    <Name>Fifth NPC</Name>
+    <Description />
+    <SystemDescription />
+  </RPGNPC>
+  <RPGNPC>
+    <ShopID>0</ShopID>
+    <ShopConditions />
+    <SpellShopID>0</SpellShopID>
+    <SpellShopConditions />
+    <Repairing>false</Repairing>
+    <ReparingConditions />
+    <RepairPriceModifier>2</RepairPriceModifier>
+    <RepairCurrencyID>1</RepairCurrencyID>
+    <TeleportConditions />
+    <Targets />
+    <GeneralConversationID />
+    <IsGuildMember>false</IsGuildMember>
+    <GuildID>0</GuildID>
+    <IsRecruit>false</IsRecruit>
+    <AdvanceRankLevel>0</AdvanceRankLevel>
+    <ID>6</ID>
+    <Name>Testing NPC</Name>
+    <Description />
+    <SystemDescription />
+  </RPGNPC>
+  <RPGNPC>
+    <ShopID>0</ShopID>
+    <ShopConditions />
+    <SpellShopID>0</SpellShopID>
+    <SpellShopConditions />
+    <Repairing>false</Repairing>
+    <ReparingConditions />
+    <RepairPriceModifier>2</RepairPriceModifier>
+    <RepairCurrencyID>1</RepairCurrencyID>
+    <TeleportConditions />
+    <Targets />
+    <GeneralConversationID />
+    <IsGuildMember>false</IsGuildMember>
+    <GuildID>0</GuildID>
+    <IsRecruit>false</IsRecruit>
+    <AdvanceRankLevel>0</AdvanceRankLevel>
+    <ID>7</ID>
+    <Name>GENERAL TALK</Name>
+    <Description />
+    <SystemDescription />
+  </RPGNPC>
+</ArrayOfRPGNPC>

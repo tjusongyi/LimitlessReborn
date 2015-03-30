@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfRPGWorldObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RPGWorldObject>
+    <ID>1</ID>
+    <Name>Wall</Name>
+    <Description />
+    <SystemDescription>Removed by quest</SystemDescription>
+    <Static>false</Static>
+    <OnlyOnce>false</OnlyOnce>
+    <Conditions />
+    <Events />
+  </RPGWorldObject>
+  <RPGWorldObject>
+    <ID>2</ID>
+    <Name>Village</Name>
+    <Description />
+    <SystemDescription />
+    <Static>false</Static>
+    <OnlyOnce>false</OnlyOnce>
+    <Conditions />
+    <Events />
+  </RPGWorldObject>
+  <RPGWorldObject>
+    <ID>3</ID>
+    <Name>Furniture</Name>
+    <Description />
+    <SystemDescription />
+    <Static>false</Static>
+    <OnlyOnce>false</OnlyOnce>
+    <Conditions />
+    <Events />
+  </RPGWorldObject>
+</ArrayOfRPGWorldObject>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfRPGItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RPGItem>
+    <ID>1</ID>
+    <Name>Gold</Name>
+    <Description />
+    <SystemDescription />
+    <Effects />
+    <UseConditions />
+    <IsUsable>false</IsUsable>
+    <UsageSkill>Item</UsageSkill>
+    <Recharge>4</Recharge>
+    <IconPath>Icon/goldicon</IconPath>
+    <Stackable>true</Stackable>
+    <MaximumStack>999999</MaximumStack>
+    <Destroyable>true</Destroyable>
+    <LevelItem>-1</LevelItem>
+    <Value>0</Value>
+    <Rarity>Magic</Rarity>
+    <NumberCharges>0</NumberCharges>
+    <PrefabName />
+    <Droppable>true</Droppable>
+    <CurrentDurability>0</CurrentDurability>
+    <Categories />
+    <IsCopy>false</IsCopy>
+    <SourceItem>0</SourceItem>
+  </RPGItem>
+  <RPGItem>
+    <ID>2</ID>
+    <Name>Healing potion</Name>
+    <Description />
+    <SystemDescription />
+    <Effects>
+      <Effect>
+        <Target>Self</Target>
+        <EffectType>HitPointChange</EffectType>
+        <Value>40</Value>
+        <ValueMax>0</ValueMax>
+        <Duration>0</Duration>
+        <ID>0</ID>
+      </Effect>
+    </Effects>
+    <UseConditions />
+    <IsUsable>true</IsUsable>
+    <UsageSkill>Item</UsageSkill>
+    <Recharge>10</Recharge>
+    <IconPath>Icon/HealPotionIcon</IconPath>
+    <Stackable>false</Stackable>
+    <MaximumStack>0</MaximumStack>
+    <Destroyable>true</Destroyable>
+    <LevelItem>1</LevelItem>
+    <Value>0</Value>
+    <Rarity>Worthless</Rarity>
+    <NumberCharges>0</NumberCharges>
+    <PrefabName />
+    <Droppable>true</Droppable>
+    <CurrentDurability>0</CurrentDurability>
+    <Categories />
+    <IsCopy>false</IsCopy>
+    <SourceItem>0</SourceItem>
+  </RPGItem>
+</ArrayOfRPGItem>

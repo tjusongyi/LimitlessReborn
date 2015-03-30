@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfRPGSpell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RPGSpell>
+    <ID>1</ID>
+    <Name>Fireball</Name>
+    <Description />
+    <SystemDescription />
+    <Effects>
+      <Effect>
+        <Target>Other</Target>
+        <EffectType>HitPointChange</EffectType>
+        <Value>-15</Value>
+        <ValueMax>0</ValueMax>
+        <Duration>0</Duration>
+        <ID>0</ID>
+      </Effect>
+    </Effects>
+    <UseConditions />
+    <IsUsable>true</IsUsable>
+    <UsageSkill>Spell</UsageSkill>
+    <Recharge>0.5</Recharge>
+    <IconPath>Icon/FireballIcon</IconPath>
+    <ManaCost>0</ManaCost>
+    <Spelltype>Projectile</Spelltype>
+    <Target>Character</Target>
+    <SkillId>0</SkillId>
+    <SkillValue>0</SkillValue>
+    <PrefabName>Spells/Fireball</PrefabName>
+    <Level>1</Level>
+    <ProjectileSpeed>15</ProjectileSpeed>
+    <Price>40</Price>
+  </RPGSpell>
+</ArrayOfRPGSpell>
