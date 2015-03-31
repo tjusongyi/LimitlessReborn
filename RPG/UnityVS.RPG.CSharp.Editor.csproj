@@ -58,6 +58,9 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
     </Reference>
+    <Reference Include="TcpClientImplementation">
+      <HintPath>Assets\Plugins\TcpClientImplementation.dll</HintPath>
+    </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
@@ -66,9 +69,6 @@
     </Reference>
     <Reference Include="UnityVS.VersionSpecific">
       <HintPath>Assets\UnityVS\Editor\UnityVS.VersionSpecific.dll</HintPath>
-    </Reference>
-    <Reference Include="Assembly-UnityScript">
-      <HintPath>Library\ScriptAssemblies\Assembly-UnityScript.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-UnityScript-firstpass">
       <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
@@ -85,47 +85,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Best HTTP (Pro)\Installer\Editor\BestHTTPInstaller.cs" />
     <Compile Include="Assets\PhatRobit\Simple RPG Camera\Scripts\Editor\SimpleRpgCameraEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\MainWindowEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Utils\BaseEditorWindow.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Utils\ConditionsUtils.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Utils\ConversationUtils.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Utils\EditorUtils.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Utils\EffectUtils.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Utils\EventUtils.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Utils\GUIUtils.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Utils\ItemUtils.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Utils\StatisticIncreaseUtils.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Utils\Validation\Validate.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Utils\Validation\XMLError.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\ArmorEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\AttributeEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\ClassEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\ContainerEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\ConversationEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\Drawing.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\DungeonEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\EnemyEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\EquipmentSlotEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\GatheringItemEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\GuildEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\ItemCategoryEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\ItemEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\NPCEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\QuestCategoryEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\QuestEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\RaceEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\RecipeEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\ReputationEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\SceneEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\ShopEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\SkillEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\SpawnPointEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\SpellEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\SpellShopEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\TeleportEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\WeaponEditor.cs" />
-    <Compile Include="Assets\RPGKit\Scripts\Editor\Window\WorldObjectEditor.cs" />
     <Compile Include="Assets\Topdown Kit\Editor\AnimationManagerEditor.cs" />
     <Compile Include="Assets\Topdown Kit\Editor\AnimationManagerEnemyEditor.cs" />
     <Compile Include="Assets\Topdown Kit\Editor\EnemyControllerEditor.cs" />
@@ -136,6 +97,8 @@
     <Compile Include="Assets\Topdown Kit\Editor\PlayerStatusEditor.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Best HTTP (Pro)\Examples\Readme.txt" />
+    <None Include="Assets\Best HTTP (Pro)\link.xml" />
     <None Include="Assets\PhatRobit\Simple RPG Camera\Documentation\changelog.txt" />
     <None Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Shaders\ToonTerrain.shader" />
     <None Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Shaders\Toony-BasicOutline-Transparent.shader" />
@@ -147,29 +110,8 @@
     <None Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Shaders\Toony-LightedOutline-Illum-Transparent.shader" />
     <None Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Shaders\Toony-LightedOutline-Transparent.shader" />
     <None Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Shaders\Toony-Lighted-Transparent.shader" />
-    <None Include="Assets\RPGKit\Models\Anim Frames.txt" />
-    <None Include="Assets\RPGKit\readme.txt" />
-    <None Include="Assets\RPGKit\Resources\XML\ARMOREN.xml" />
-    <None Include="Assets\RPGKit\Resources\XML\ATTRIBUTEEN.xml" />
-    <None Include="Assets\RPGKit\Resources\XML\CONTAINEREN.xml" />
-    <None Include="Assets\RPGKit\Resources\XML\ENEMYEN.xml" />
-    <None Include="Assets\RPGKit\Resources\XML\EQSLOTEN.xml" />
-    <None Include="Assets\RPGKit\Resources\XML\GUILDEN.xml" />
-    <None Include="Assets\RPGKit\Resources\XML\ITEMCATEGORYEN.xml" />
-    <None Include="Assets\RPGKit\Resources\XML\ITEMEN.xml" />
-    <None Include="Assets\RPGKit\Resources\XML\NPCEN.xml" />
-    <None Include="Assets\RPGKit\Resources\XML\PARAGRAPHEN.xml" />
-    <None Include="Assets\RPGKit\Resources\XML\QUESTEN.xml" />
-    <None Include="Assets\RPGKit\Resources\XML\REPUTATIONEN.xml" />
-    <None Include="Assets\RPGKit\Resources\XML\SCENEEN.xml" />
-    <None Include="Assets\RPGKit\Resources\XML\SHOPEN.xml" />
-    <None Include="Assets\RPGKit\Resources\XML\SKILLEN.xml" />
-    <None Include="Assets\RPGKit\Resources\XML\SPELLEN.xml" />
-    <None Include="Assets\RPGKit\Resources\XML\SPELLSHOPEN.xml" />
-    <None Include="Assets\RPGKit\Resources\XML\TELEPORTEN.xml" />
-    <None Include="Assets\RPGKit\Resources\XML\WEAPONEN.xml" />
-    <None Include="Assets\RPGKit\Resources\XML\WORLDOBJECTEN.xml" />
-    <None Include="Assets\RPGKit\Standard Assets\SkyBoxes\skyboxShader.shader" />
+    <None Include="Assets\Plugins\Readme.txt" />
+    <None Include="Assets\Resources\Config\Creature.xml" />
     <None Include="Assets\Standard Assets\Blob-Shadow\ShadowProjection.shader" />
     <None Include="Assets\Standard Assets\Gem Rendering\diamond shader.shader" />
     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />

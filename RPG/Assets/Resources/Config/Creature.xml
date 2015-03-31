@@ -1,0 +1,22 @@
+<!--
+XSpirit:魂级
+恢复的buf是相加,
+species:
+1. 骷髅王
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<Creatures>
+	<Creature species="SkeletonKing">
+		<XSpirit level="1" expForNext="100" atkRatio="100" hpRatio="10" hpRegRatio="1000" mpRegRatio="1200" defRatio="80" maxHp="200" maxMp="100" maxAtk="64" maxDef="96"
+		maxHpReg="10" maxMpReg="5" hp="1.5" mp="1.2" atk="1.5" def="1.4" hpReg="5" mpReg="2" sr="100" criRate="1.2" criDam="1.2" atkSpd="1.2" atkRan="1.1" movSpd="1.2" />
+		
+		<BaseAttribute hp="120" mp="50" attack="32" defend="48" hpRegenerate="5" mpRegenerate="2" searchRange="100" 
+		criticalRate="0.2" criticalDamage="2" atkSpd="0.5" atkRange="3" moveSpeed="1.5" />
+		
+		<BaseAttributeDisturbance hp="50" mp="20" attack="4" defend="8" hpRegenerate="1" mpRegenerate="1" searchRange="20" 
+		criticalRate="0.05" criticalDamage="0.5" atkSpd="0.05" atkRange="0.5" moveSpeed="0.1" />
+		
+	</Creature>
+	
+</Creatures>
+
