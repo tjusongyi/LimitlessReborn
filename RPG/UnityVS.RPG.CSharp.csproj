@@ -52,6 +52,9 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Bmob-Unity">
+      <HintPath>Assets\libs\Bmob-Unity.dll</HintPath>
+    </Reference>
     <Reference Include="TcpClientImplementation">
       <HintPath>Assets\Plugins\TcpClientImplementation.dll</HintPath>
     </Reference>
@@ -148,23 +151,28 @@
     <Compile Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Scripts\SrpgcOrbit.cs" />
     <Compile Include="Assets\PhatRobit\Simple RPG Camera\Scripts\Enums.cs" />
     <Compile Include="Assets\PhatRobit\Simple RPG Camera\Scripts\SimpleRpgCamera.cs" />
-    <Compile Include="Assets\Scripts\BaseEntity.cs" />
-    <Compile Include="Assets\Scripts\CommonDef.cs" />
-    <Compile Include="Assets\Scripts\CreatureController.cs" />
-    <Compile Include="Assets\Scripts\CreatureEntity.cs" />
-    <Compile Include="Assets\Scripts\CreatureManager.cs" />
-    <Compile Include="Assets\Scripts\EquipmentEntity.cs" />
+    <Compile Include="Assets\Scripts\Common\BaseEntity.cs" />
+    <Compile Include="Assets\Scripts\Common\CloudManager.cs" />
+    <Compile Include="Assets\Scripts\Common\CommonDef.cs" />
+    <Compile Include="Assets\Scripts\Common\ObjectHelper.cs" />
+    <Compile Include="Assets\Scripts\Common\RandomGenerator.cs" />
+    <Compile Include="Assets\Scripts\Common\Singleton.cs" />
+    <Compile Include="Assets\Scripts\Creature\CreatureController.cs" />
+    <Compile Include="Assets\Scripts\Creature\CreatureEntity.cs" />
+    <Compile Include="Assets\Scripts\Creature\CreatureManager.cs" />
     <Compile Include="Assets\Scripts\GameLogicManager.cs" />
-    <Compile Include="Assets\Scripts\HttpManager.cs" />
-    <Compile Include="Assets\Scripts\MiniParser.cs" />
-    <Compile Include="Assets\Scripts\PlayerEntity.cs" />
-    <Compile Include="Assets\Scripts\RandomGenerator.cs" />
-    <Compile Include="Assets\Scripts\SecurityParser.cs" />
-    <Compile Include="Assets\Scripts\Singleton.cs" />
-    <Compile Include="Assets\Scripts\SkillEntity.cs" />
-    <Compile Include="Assets\Scripts\SmallXmlParser.cs" />
-    <Compile Include="Assets\Scripts\User.cs" />
-    <Compile Include="Assets\Scripts\UserManager.cs" />
+    <Compile Include="Assets\Scripts\Inventory\EquipmentEntity.cs" />
+    <Compile Include="Assets\Scripts\NetWork\HttpManager.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerEntity.cs" />
+    <Compile Include="Assets\Scripts\Player\User.cs" />
+    <Compile Include="Assets\Scripts\Player\UserManager.cs" />
+    <Compile Include="Assets\Scripts\Plugins\MiniParser.cs" />
+    <Compile Include="Assets\Scripts\Plugins\SecurityParser.cs" />
+    <Compile Include="Assets\Scripts\Plugins\SmallXmlParser.cs" />
+    <Compile Include="Assets\Scripts\Skill\SkillEntity.cs" />
+    <Compile Include="Assets\Scripts\UI\LoginPanel.cs" />
+    <Compile Include="Assets\Scripts\UI\PanelBase.cs" />
+    <Compile Include="Assets\Scripts\UI\PanelManager.cs" />
     <Compile Include="Assets\Scripts\test.cs" />
     <Compile Include="Assets\Topdown Kit\Effect\Effects_01\Prefebs\DestroyForTime.cs" />
     <Compile Include="Assets\Topdown Kit\Effect\Effects_01\Prefebs\FollowTarget.cs" />

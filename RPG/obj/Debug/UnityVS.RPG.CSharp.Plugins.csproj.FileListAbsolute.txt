@@ -22,3 +22,4 @@ C:\Users\linekong\Desktop\LimitlessReborn\RPG\Temp\UnityVS_bin\Debug\TcpClientIm
 C:\Users\linekong\Desktop\LimitlessReborn\RPG\obj\Debug\UnityVS.RPG.CSharp.Plugins.csprojResolveAssemblyReference.cache
 C:\Users\linekong\Desktop\LimitlessReborn\RPG\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\linekong\Desktop\LimitlessReborn\RPG\obj\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\linekong\Desktop\LimitlessReborn\RPG\Temp\UnityVS_bin\Debug\Bmob-Unity.dll

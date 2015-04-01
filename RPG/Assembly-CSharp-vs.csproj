@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{0BE8E511-D506-A1D0-E67D-923A5ED26D39}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_1;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>F:/Program Files (x86)/unity461/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>F:/Program Files (x86)/unity461/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Authentication\Credentials.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Authentication\Digest.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Authentication\DigestStore.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Caching\HTTPCacheFileInfo.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Caching\HTTPCacheFileLock.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Caching\HTTPCacheMaintananceParams.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Caching\HTTPCacheService.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Cookies\Cookie.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Cookies\CookieJar.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Decompression\CRC32.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Decompression\Deflate.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Decompression\DeflateStream.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Decompression\GZipStream.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Decompression\InfTree.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Decompression\Inflate.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Decompression\Tree.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Decompression\Zlib.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Decompression\ZlibBaseStream.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Decompression\ZlibCodec.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Decompression\ZlibConstants.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Decompression\ZlibStream.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Extensions\Extensions.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Extensions\KeyValuePair.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Extensions\KeyValuePairList.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Extensions\WWWAuthenticateHeaderParser.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Forms\HTTPFieldData.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Forms\HTTPFormBase.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Forms\HTTPFormUsage.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Forms\Implementations\HTTPMultiPartForm.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Forms\Implementations\HTTPUrlEncodedForm.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Forms\Implementations\UnityForm.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\HTTPConnection.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\HTTPConnectionStates.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\HTTPManager.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\HTTPMethods.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\HTTPProtocolFactory.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\HTTPProxy.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\HTTPRange.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\HTTPRequest.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\HTTPRequestStatus.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\HTTPResponse.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\HTTPUpdateDelegator.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\PlatformSupport\Cryptography\MD5CryptoServiceProvider.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\PlatformSupport\IO\Directory.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\PlatformSupport\IO\File.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\PlatformSupport\IO\FileEnums.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\PlatformSupport\IO\FileHelper.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\PlatformSupport\IO\FileStream.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\PlatformSupport\IO\Infos.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\PlatformSupport\Threading\Thread.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\Proxy\HTTPProxyResponse.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\WebSocket\Frames\WebSocketFrameReader.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\WebSocket\Frames\WebSocketFrameTypes.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\WebSocket\Frames\WebSocketFrameWriters.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\WebSocket\WebSocket.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\BestHTTP\WebSocket\WebSocketResponse.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\Examples\DownloadStreamingTestScript.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\Examples\LeaderboardTest.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\Examples\LitJson\IJsonWrapper.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\Examples\LitJson\JsonData.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\Examples\LitJson\JsonException.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\Examples\LitJson\JsonMapper.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\Examples\LitJson\JsonMockWrapper.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\Examples\LitJson\JsonReader.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\Examples\LitJson\JsonWriter.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\Examples\LitJson\Lexer.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\Examples\LitJson\ParserToken.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\Examples\LoadImageTestScript.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\Examples\RestApiTestScript.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\Examples\TestSceneSelectorScript.cs" />
+     <Compile Include="Assets\Best HTTP (Pro)\Examples\WebSocketTestScirpt.cs" />
+     <Compile Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Scripts\SrpgcDemoGUI.cs" />
+     <Compile Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Scripts\SrpgcDemoSelect.cs" />
+     <Compile Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Scripts\SrpgcJoystick.cs" />
+     <Compile Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Scripts\SrpgcKeyboardMovementController.cs" />
+     <Compile Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Scripts\SrpgcLegacy3rdPerson.cs" />
+     <Compile Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Scripts\SrpgcLegacyAnimator.cs" />
+     <Compile Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Scripts\SrpgcLegacyPlayerController.cs" />
+     <Compile Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Scripts\SrpgcMouseMovementController.cs" />
+     <Compile Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Scripts\SrpgcOrbit.cs" />
+     <Compile Include="Assets\PhatRobit\Simple RPG Camera\Scripts\Enums.cs" />
+     <Compile Include="Assets\PhatRobit\Simple RPG Camera\Scripts\SimpleRpgCamera.cs" />
+     <Compile Include="Assets\Scripts\Common\BaseEntity.cs" />
+     <Compile Include="Assets\Scripts\Common\CloudManager.cs" />
+     <Compile Include="Assets\Scripts\Common\CommonDef.cs" />
+     <Compile Include="Assets\Scripts\Common\ObjectHelper.cs" />
+     <Compile Include="Assets\Scripts\Common\RandomGenerator.cs" />
+     <Compile Include="Assets\Scripts\Common\Singleton.cs" />
+     <Compile Include="Assets\Scripts\Creature\CreatureController.cs" />
+     <Compile Include="Assets\Scripts\Creature\CreatureEntity.cs" />
+     <Compile Include="Assets\Scripts\Creature\CreatureManager.cs" />
+     <Compile Include="Assets\Scripts\GameLogicManager.cs" />
+     <Compile Include="Assets\Scripts\Inventory\EquipmentEntity.cs" />
+     <Compile Include="Assets\Scripts\NetWork\HttpManager.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerEntity.cs" />
+     <Compile Include="Assets\Scripts\Player\User.cs" />
+     <Compile Include="Assets\Scripts\Player\UserManager.cs" />
+     <Compile Include="Assets\Scripts\Plugins\MiniParser.cs" />
+     <Compile Include="Assets\Scripts\Plugins\SecurityParser.cs" />
+     <Compile Include="Assets\Scripts\Plugins\SmallXmlParser.cs" />
+     <Compile Include="Assets\Scripts\Skill\SkillEntity.cs" />
+     <Compile Include="Assets\Scripts\UI\LoginPanel.cs" />
+     <Compile Include="Assets\Scripts\UI\PanelBase.cs" />
+     <Compile Include="Assets\Scripts\UI\PanelManager.cs" />
+     <Compile Include="Assets\Scripts\test.cs" />
+     <Compile Include="Assets\Topdown Kit\Effect\Effects_01\Prefebs\DestroyForTime.cs" />
+     <Compile Include="Assets\Topdown Kit\Effect\Effects_01\Prefebs\FollowTarget.cs" />
+     <Compile Include="Assets\Topdown Kit\Effect\Effects_02\AnimationSpeed.cs" />
+     <Compile Include="Assets\Topdown Kit\Effect\Effects_02\ScrollUV.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\CharacterCreation\ButtonOK.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\CharacterCreation\ButtonSelected.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\CharacterCreation\Entername.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\CharacterCreation\SelectCharacter.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Enemy\AnimationManagerEnemy.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Enemy\DetectArea.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Enemy\DropItem.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Enemy\EnemyController.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Enemy\EnemyStatus.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\GUI\BottomBar.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\GUI\CommandMenu.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\GUI\DeadWindow.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\GUI\EnemyHP.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\GUI\HeroStatusBar.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\GUI\LogText.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\GUI\Minimap.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\GUI\MinimapSign.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\GUI\SaveWindow.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Menu\GUI_Calculate.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Menu\GUI_Menu.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Menu\Item_Data.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Menu\Item_Obj.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Menu\LookAtCamera.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Menu\NpcShop.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Misc\GameSetting.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Misc\MinimapSignSetup.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Misc\SoundManager.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Misc\Spawner.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Misc\TextDamage.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Misc\TextFilter.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Player\Camera\MinimapCamera.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Player\Camera\MouseOrbit.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Player\Controller\AnimationManager.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Player\Controller\AreaSkillCursor.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Player\Controller\HeroController.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Player\Controller\PlayerSkill.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Player\Controller\PlayerStatus.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Player\Controller\SkillArea.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Player\Controller\SpawnPointHero.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\SaveData\CharacterData.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Title\AlphaText.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Title\ControlTitleScene.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Title\LoadGameButton.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Title\NewGameButton.cs" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\Best HTTP (Pro)\Examples\Readme.txt" />
+     <None Include="Assets\Best HTTP (Pro)\link.xml" />
+     <None Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Shaders\Toony-Lighted-Illum.shader" />
+     <None Include="Assets\Standard Assets\Blob-Shadow\ShadowProjection.shader" />
+     <None Include="Assets\Topdown Kit\Shader\Transparent_Outline.shader" />
+     <None Include="Assets\Topdown Kit\Shader\MaskShader.shader" />
+     <None Include="Assets\Topdown Kit\Model\Model Character\Swordman\Swordman_Animation.txt" />
+     <None Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Shaders\Toony-Lighted-Illum-Transparent.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\Resources\Config\Creature.xml" />
+     <None Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Shaders\Toony-LightedOutline-Illum-Transparent.shader" />
+     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Shaders\ToonTerrain.shader" />
+     <None Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Shaders\Toony-LightedOutline.shader" />
+     <None Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Shaders\Toony-Lighted.shader" />
+     <None Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Shaders\Toony-LightedOutline-Transparent.shader" />
+     <None Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Shaders\Toony-LightedOutline-Illum.shader" />
+     <None Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Shaders\Toony-BasicOutline-Transparent.shader" />
+     <None Include="Assets\Plugins\Readme.txt" />
+     <None Include="Assets\PhatRobit\Simple RPG Camera\Examples\Sources\Shaders\Toony-Lighted-Transparent.shader" />
+     <None Include="Assets\PhatRobit\Simple RPG Camera\Documentation\changelog.txt" />
+     <None Include="Assets\Standard Assets\Gem Rendering\diamond shader.shader" />
+     <None Include="Assets\Topdown Kit\Model\Model Enemy\Wolf\Wolf_Animation.txt" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>C:/Users/linekong/Desktop/LimitlessReborn/RPG/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>F:/Program Files (x86)/unity461/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Bmob-Unity">
+ <HintPath>C:/Users/linekong/Desktop/LimitlessReborn/RPG/Assets/libs/Bmob-Unity.dll</HintPath>
+ </Reference>
+ <Reference Include="TcpClientImplementation">
+ <HintPath>C:/Users/linekong/Desktop/LimitlessReborn/RPG/Assets/Plugins/TcpClientImplementation.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{60FF69C5-FB93-DB0D-E4B0-6B9EF11DA4B3}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

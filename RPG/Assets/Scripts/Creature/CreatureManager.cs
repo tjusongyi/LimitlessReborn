@@ -14,9 +14,14 @@ public class CreatureManager : Singleton<CreatureManager>
 
     public void Create(Vector3 position, Vector3 rotation,string species)
     {
-        CreatureController cc = new CreatureController(species);
+       
+        GameObject creature = GameObject.Instantiate(GameObject.CreatePrimitive(PrimitiveType.Cube), position, Quaternion.Euler(rotation)) as GameObject;
+        CreatureController cc = creature.AddComponent<CreatureController>();
+        cc.Init(species);
         CCList.Add(cc);
-        GameObject.Instantiate(GameObject.CreatePrimitive(PrimitiveType.Cube), position, Quaternion.Euler(rotation));
+
+        
+
 
     }
 

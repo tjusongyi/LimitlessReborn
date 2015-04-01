@@ -5,7 +5,7 @@ using Mono.Xml;
 using System.Security;
 
 
-
+[System.Serializable]
 /// <summary>
 /// searchRange:搜索附近生物的范围，小地图显示时根据生物等级显示不同颜色
 /// 
@@ -15,7 +15,7 @@ public struct BaseAttribute   //不计算装备与技能
     public uint hp, mp, attack, defend, hpRegenerate, mpRegenerate, searchRange;
     public float criticalRate, criticalDamage, atkSpd, atkRange, moveSpeed;
 }
-
+[System.Serializable]
 /// <summary>
 /// 所有生物的实体基类，包括玩家和怪物，还有NPC。实体类只用来存取数据。
 /// </summary>
@@ -49,7 +49,7 @@ public class CreatureEntity : BaseEntity
         ReadFormConfig(species);
     }
 
-    public void SychData(bool isGet) 
+    public void SychData(bool isGet)
     {
         
 

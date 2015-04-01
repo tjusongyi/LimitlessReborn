@@ -52,6 +52,9 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Bmob-Unity">
+      <HintPath>Assets\libs\Bmob-Unity.dll</HintPath>
+    </Reference>
     <Reference Include="TcpClientImplementation">
       <HintPath>Assets\Plugins\TcpClientImplementation.dll</HintPath>
     </Reference>

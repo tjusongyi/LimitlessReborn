@@ -7,15 +7,20 @@ public class CreatureController : MonoBehaviour {
 
     public CreatureEntity CE;
 
+    [HideInInspector]
     public List<CreatureController> CreaturesInSearchArea;
     //private bool HasTarget;
     private CreatureController target;
 
-
-    public CreatureController(string species)
+    public void Init(string species)
     {
         CE = new CreatureEntity(species);
         CE.InitAttribute();
+       
+    }
+
+    public CreatureController()
+    {
         CreaturesInSearchArea = new List<CreatureController>();
     }
 
@@ -39,14 +44,14 @@ public class CreatureController : MonoBehaviour {
 
     void Update()
     {
-        if(null == target)
-        {
-            SearchForEnemy();
-        }
-        else
-        {
-            Attack(target);
-        }
+        //if(null == target)
+        //{
+        //    SearchForEnemy();
+        //}
+        //else
+        //{
+        //    Attack(target);
+        //}
        
     }
 
