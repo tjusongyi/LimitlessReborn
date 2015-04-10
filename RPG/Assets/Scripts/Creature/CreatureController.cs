@@ -6,22 +6,20 @@ using System.Collections.Generic;
 public class CreatureController : MonoBehaviour {
 
     public CreatureEntity CE;
+    public Inventory MyInventory;
 
-    [HideInInspector]
-    public List<CreatureController> CreaturesInSearchArea;
+    private List<CreatureController> mCreaturesInSearchArea;
     //private bool HasTarget;
     private CreatureController target;
 
     public void Init(string species)
     {
-        CE = new CreatureEntity(species);
-        CE.InitAttribute();
-       
+        CE = new CreatureEntity(species);       
     }
 
     public CreatureController()
     {
-        CreaturesInSearchArea = new List<CreatureController>();
+        mCreaturesInSearchArea = new List<CreatureController>();
     }
 
     public void TakeDamage(CreatureController enemy)
@@ -57,15 +55,15 @@ public class CreatureController : MonoBehaviour {
 
     void  SearchForEnemy()
     {
-        for(int i = 0;i < CreaturesInSearchArea.Count;i++)
+        for (int i = 0; i < mCreaturesInSearchArea.Count; i++)
         {
-            if(CreaturesInSearchArea[i].CE.MajorLevel < CE.MajorLevel && CreaturesInSearchArea[i].CE.MinorLevel < CE.MinorLevel)
+            if (mCreaturesInSearchArea[i].CE.MajorLevel < CE.MajorLevel && mCreaturesInSearchArea[i].CE.MinorLevel < CE.MinorLevel)
             {
-                target = CreaturesInSearchArea[i];
+                target = mCreaturesInSearchArea[i];
                 return;
             }
         }
-        target = CreaturesInSearchArea[0];
+        target = mCreaturesInSearchArea[0];
     }
 
     public void GainExp(uint exp)

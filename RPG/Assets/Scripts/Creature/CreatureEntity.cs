@@ -20,7 +20,7 @@ public struct BaseAttribute   //不计算装备与技能
 /// 所有生物的实体基类，包括玩家和怪物，还有NPC。实体类只用来存取数据。
 /// </summary>
 public class CreatureEntity : BaseEntity
-{   
+{
     public int MajorLevel;
     public int MinorLevel;
     public uint[,] ExpForLevel;
@@ -35,7 +35,7 @@ public class CreatureEntity : BaseEntity
         public BaseAttribute BaseAtrr;
         public BaseAttribute BaseAttrDist; //干扰值
     }
-    public static Dictionary<string, AttrForSpecies> AttrFSpe = new Dictionary<string, AttrForSpecies>();
+    private static Dictionary<string, AttrForSpecies> attrFSpe = new Dictionary<string, AttrForSpecies>();
 
     public BaseAttribute FinalAtrr;   //计算各种加成之后
     //public uint GeneralCombatPoint; //根据基础属性计算出来的综合战力
@@ -44,29 +44,37 @@ public class CreatureEntity : BaseEntity
 
     public CreatureEntity(string species)
     {
-        ExpForLevel = new uint[9,9];
+        ExpForLevel = new uint[9, 9];
         Species = species;
-        ReadFormConfig(species);
+        if (!attrFSpe.ContainsKey(species))
+        {
+            ReadFormConfig(species);
+        }
+        else
+        {
+            InitAttribute();
+        }
+
     }
 
     public void SychData(bool isGet)
     {
-        
+
 
     }
 
     void ReadFormConfig(string species)
     {
         SecurityParser sp = new SecurityParser();
-        string content = Resources.Load(CommonDef.ConfigPath.creatureConfig).ToString();
+        string content = Resources.Load(CommonDef.ConfigPath.CreatureConfig).ToString();
         Debug.Log(content);
         sp.LoadXml(content);
         SecurityElement se = sp.ToXml();
-        foreach(SecurityElement elem in se.Children)
+        foreach (SecurityElement elem in se.Children)
         {
-            if(elem.Tag == "Creature")
+            if (elem.Tag == "Creature")
             {
-                if(elem.Attribute("species") == species)
+                if (elem.Attribute("species") == species)
                 {
                     AttrForSpecies afs = new AttrForSpecies();
                     SecurityElement attrElem = elem.SearchForChildByTag("BaseAttribute");
@@ -81,7 +89,7 @@ public class CreatureEntity : BaseEntity
                     float.TryParse(attrElem.Attribute("criticalDamage"), out afs.BaseAtrr.criticalDamage);
                     float.TryParse(attrElem.Attribute("atkSpd"), out afs.BaseAtrr.atkSpd);
                     float.TryParse(attrElem.Attribute("moveSpeed"), out afs.BaseAtrr.moveSpeed);
-                    float.TryParse(attrElem.Attribute("atkRange"),out afs.BaseAtrr.atkRange);
+                    float.TryParse(attrElem.Attribute("atkRange"), out afs.BaseAtrr.atkRange);
                     attrElem = elem.SearchForChildByTag("BaseAttributeDisturbance");
                     uint.TryParse(attrElem.Attribute("hp"), out afs.BaseAttrDist.hp);
                     uint.TryParse(attrElem.Attribute("mp"), out afs.BaseAttrDist.mp);
@@ -95,16 +103,16 @@ public class CreatureEntity : BaseEntity
                     float.TryParse(attrElem.Attribute("atkSpd"), out afs.BaseAttrDist.atkSpd);
                     float.TryParse(attrElem.Attribute("moveSpeed"), out afs.BaseAttrDist.moveSpeed);
                     float.TryParse(attrElem.Attribute("atkRange"), out afs.BaseAttrDist.atkRange);
-                    AttrFSpe.Add(species, afs);
+                    attrFSpe.Add(species, afs);
                 }
             }
         }
-        
+
     }
 
-    public CreatureEntity InitAttribute()   //如果是一级的话在基础属性的基础上将属性随机化
+    void InitAttribute()   //如果是一级的话在基础属性的基础上将属性随机化
     {
 
-        return this;
+
     }
 }
